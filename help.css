@@ -1,0 +1,60 @@
+/* Guide, preferences, and the optional section map. All live in the shared dialog. */
+#dialog-content .guide-lead{font:700 clamp(16px,2.5vw,21px)/1.5 Arial,sans-serif;margin:0 0 22px;color:var(--cream,#fff8e8)}
+.guide-copy,.settings-note,.guide-secrets p{font:13px/1.7 Arial,sans-serif;color:#d8d3cc}
+.guide-shortcuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;padding:18px;background:#090909;border:1px solid #ffffff30}
+.guide-shortcuts span{font:12px/1.8 monospace;color:#e9e4dc;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+kbd{display:inline-block;padding:2px 6px;min-width:22px;border:1px solid #fff6;border-bottom-width:3px;font:700 11px/1.5 monospace;color:#fff;background:#222;text-align:center;border-radius:2px}
+.guide-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:25px 0}
+.guide-action{position:relative;display:block;text-align:left;padding:17px 14px 19px;border:1px solid #ffffff60;background:#f7f1e5;color:#101010;font:700 16px/1.25 Arial,sans-serif;transition:transform .2s,box-shadow .2s}
+.guide-action span{display:block;font:700 9px/1.4 monospace;letter-spacing:1px;margin-bottom:15px;color:#82001c}
+.guide-action b{position:absolute;right:10px;top:13px;font:20px Arial,sans-serif}
+.guide-action:hover,.guide-action:focus-visible{transform:translateY(-4px);box-shadow:4px 5px 0 #e40021}
+.guide-settings{margin-top:25px;padding-top:22px;border-top:1px solid #ffffff35}
+.guide-settings h3{margin:0 0 17px;font:700 15px/1.3 monospace;letter-spacing:2px;color:#fff}
+.settings-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:8px}
+.settings-heading h3{margin-bottom:0}
+.guide-sound-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:flex-end}
+.sound-test-action{border-color:#e4bb80;background:#f4e3c0;color:#111}
+.sound-test-action[aria-busy=true]{opacity:.75;cursor:progress}
+#dialog-content .guide-audio-status{font:11px/1.6 monospace;color:#e5c795;margin:12px 0 0}
+#dialog-content .guide-audio-test-feedback{font:12px/1.6 Arial,sans-serif;color:#fff3d5;background:#090909;border-left:3px solid #e4bb80;padding:10px 12px;margin:10px 0 0}
+.guide-audio-test-feedback:empty{display:none}
+.small-action{border:1px solid #ffffff75;background:#111;color:white;padding:10px 14px;cursor:pointer;font:700 11px/1.3 monospace;transition:background .2s,color .2s}
+.small-action:hover,.small-action:focus-visible{background:#fff8e8;color:#111}
+.volume-setting{display:block;margin:18px 0;color:#fff;font:13px/1.5 Arial,sans-serif}
+.volume-setting>span{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.volume-setting output{font:700 11px monospace;color:#ffc7ce}
+.volume-setting input{width:100%;accent-color:#e40021;cursor:pointer;min-height:24px;margin:0}
+.settings-note{font-size:11px;margin:12px 0 0}
+.mode-setting{display:flex;gap:20px;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #ffffff18;font:13px Arial,sans-serif;cursor:pointer}
+.mode-setting b{display:block;font-weight:700;color:#fff;margin-bottom:6px}
+.mode-setting small{display:block;font-size:11px;line-height:1.6;color:#c7c1bc}
+.mode-setting input{accent-color:#e40021;width:20px;height:20px;flex-shrink:0;cursor:pointer}
+.guide-secrets{margin-top:25px;background:#090909;padding:15px 17px;border-left:3px solid #c8ac65;font:12px Arial,sans-serif}
+.guide-secrets summary{cursor:pointer;color:#e9d4a0;line-height:1.5}
+.guide-secrets p{margin-bottom:0;font-size:12px}
+.guide-achievements{margin-top:24px}
+.guide-achievements h3{font:700 13px monospace;letter-spacing:2px;margin:0 0 14px}
+.achievement-list{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding:0;margin:0;gap:8px}
+.achievement-list li{padding:12px;border:1px solid #ffffff25;background:#080808;font:11px/1.5 Arial,sans-serif;color:#a9a4a0}
+.achievement-list li strong{display:block;color:#d0c8bf;margin-bottom:3px;font-size:12px}
+.achievement-list li.earned{border-color:#d8b66b80;color:#d2c8b3}
+.achievement-list li.earned strong{color:#f0d392}
+.achievement-list li.earned strong:before{content:'✦ ';color:#f0d392}
+.grand-line-map{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px 20px;padding:24px 0;margin-bottom:16px}
+.grand-line-map:before{content:'';position:absolute;inset:23% 5%;border:2px dashed #d8b66b90;transform:rotate(-8deg);border-radius:50%;pointer-events:none}
+.map-island{position:relative;min-height:151px;border:1px solid #f2ddad70;background:#171313;color:#fff;padding:20px 14px;text-align:left;isolation:isolate;transition:transform .25s,border-color .25s,background .25s}
+.map-island:nth-child(2),.map-island:nth-child(5){transform:translateY(-15px)}
+.map-island:hover,.map-island:focus-visible{transform:translateY(-6px) rotate(-2deg);border-color:#ffdc8a;background:#251518}
+.map-island:nth-child(2):hover,.map-island:nth-child(5):hover{transform:translateY(-21px) rotate(-2deg)}
+.map-island.is-current{border:2px solid #fff2d0;background:#ad001e}
+.island-number{font:700 11px monospace;color:#e4bc76;display:block;letter-spacing:2px;margin-bottom:18px}
+.map-island strong{font:700 18px Arial,sans-serif;display:block;margin-bottom:7px}
+.map-island small{font:10px monospace;display:block;color:#d0baba}
+.map-island.is-current small{color:#fff}
+.island-compass{position:absolute;right:8px;bottom:3px;color:#d7ba6e;font:43px Georgia,serif;opacity:.3;z-index:-1;transition:transform .4s}
+.map-island:hover .island-compass{transform:rotate(90deg)}
+@media(max-width:600px){.guide-shortcuts{grid-template-columns:1fr;padding:14px;gap:9px}.guide-actions{grid-template-columns:1fr;gap:8px;margin:18px 0}.guide-action{padding:13px 15px;font-size:15px}.guide-action span{margin-bottom:5px}.guide-settings{margin-top:20px}.settings-heading{flex-wrap:wrap}.guide-sound-actions{justify-content:flex-start}.grand-line-map{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:12px 0}.map-island{min-height:130px;padding:15px 12px}.map-island:nth-child(n){transform:none}.map-island:nth-child(n):hover{transform:translateY(-3px)}.achievement-list{grid-template-columns:1fr}.settings-note{font-size:11px}}
+.reduced-motion .guide-action,.reduced-motion .map-island,.reduced-motion .island-compass{transition:none!important;transform:none!important}
+.performance-mode .guide-action:hover{box-shadow:none}
+@media(prefers-reduced-motion:reduce){.guide-action,.map-island,.island-compass{transition:none!important;transform:none!important}}

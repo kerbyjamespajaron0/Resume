@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#df1430">
+  <meta name="description" content="Kerby James Pajaron — IT student, web developer, and explorer of cybersecurity. A One Piece inspired journey through my work.">
+  <title>Kerby James Pajaron | Grand Line Portfolio</title>
+  <link rel="icon" href="assets/pirate-character.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/onepiece-1.webp" as="image">
+  <link rel="stylesheet" href="style.css?v=5.2">
+  <link rel="stylesheet" href="portrait-upgrade.css?v=5.2">
+  <link rel="stylesheet" href="my-work.css?v=5.2">
+  <link rel="stylesheet" href="audio-upgrade.css?v=5.2">
+  <link rel="stylesheet" href="help.css?v=5.2">
+  <link rel="stylesheet" href="ultimate.css?v=5.2">
+  <script defer src="script.js?v=5.2"></script>
+  <script defer src="audio-upgrade.js?v=5.2"></script>
+  <script defer src="effects.js?v=5.2"></script>
+  <script defer src="help.js?v=5.2"></script>
+  <script defer src="ultimate.js?v=5.2"></script>
+  <script defer src="dramatic-intro.js?v=5.2"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to portfolio</a>
+  <div id="intro" class="intro" hidden>
+    <div class="intro-camera" aria-hidden="true"></div>
+    <svg class="intro-lightning" aria-hidden="true" viewBox="0 0 1000 700" preserveAspectRatio="none"><path d="M120 0 370 250 260 270 570 700M880 0 660 280 790 290 430 700"/></svg>
+    <div class="intro-inner">
+      <div class="wheel"><img src="assets/pirate-character.svg" alt="Pirate emblem" width="120" height="150"></div>
+      <p class="intro-title" data-split>SETTING SAIL // K.J.P</p>
+      <div class="meter" role="progressbar" aria-label="Loading portfolio assets" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="Preparing the voyage"><i id="meter"></i></div>
+      <p class="intro-loading" id="loading-status" role="status">Preparing the voyage…</p>
+      <button id="skip-intro" class="text-button">ENTER THE GRAND LINE <span aria-hidden="true">↗</span></button>
+    </div>
+    <div class="speed-lines" aria-hidden="true"></div>
+  </div>
+  <div id="wipe" aria-hidden="true"><i></i><i></i><i></i></div>
+  <header class="site-header">
+    <button id="pirate-mark" class="brand" data-go="0" aria-label="Kerby James Pajaron, home"><span class="brand-mark" aria-hidden="true">☠</span><span>K.J.P<span class="brand-sub">DEVELOPER / EXPLORER</span></span></button>
+    <nav class="section-nav" aria-label="Portfolio sections">
+      <button data-go="0" aria-current="page">HOME</button><button data-go="1">EDUCATION</button><button data-go="2">PROJECTS</button><button data-go="3">SKILLS</button><button data-go="4">ABOUT</button><button data-go="5">CONTACT <span aria-hidden="true">↗</span></button>
+    </nav>
+    <span class="header-note">PHILIPPINES <span aria-hidden="true">✦</span> EST. K.J.P</span>
+  </header>
+  <main id="app" tabindex="-1">
+    <section class="scene active home-scene" data-name="HOME" aria-labelledby="home-title">
+      <div class="scene-stripes" aria-hidden="true"></div><div class="floating-symbols" aria-hidden="true"><span>✦</span><span>⚓</span><span>✧</span></div>
+      <div class="half">
+        <p class="eyebrow"><span class="tiny-line"></span> A DEVELOPER'S ADVENTURE / VOL. 05</p>
+        <h1 id="home-title" class="name-reveal" aria-label="Kerby James Pajaron"><span class="cut" data-split aria-hidden="true">KERBY</span><span class="name-band" data-split aria-hidden="true">JAMES</span><span class="cut surname" data-split aria-hidden="true">PAJARON.</span></h1>
+        <div class="home-description"><span class="description-index" aria-hidden="true">01 /</span><p>Third-year IT student. Building useful websites,<br class="desktop-break"> exploring cybersecurity, and chasing the next idea.</p></div>
+        <nav class="bigmenu" aria-label="Explore my portfolio"><button data-go="2"><span>EXPLORE MY WORK</span><b aria-hidden="true">↗</b></button><button data-go="4" class="secondary"><span>MEET THE DEVELOPER</span><b aria-hidden="true">→</b></button></nav>
+        <div class="home-caption"><span class="status-dot"></span> ALWAYS LEARNING. ALWAYS SETTING SAIL.</div>
+      </div>
+      <div class="art" aria-label="One Piece artwork and the developer's portrait">
+        <div class="art-grid" aria-hidden="true"></div><div class="sun" aria-hidden="true"></div><span class="art-vertical" aria-hidden="true">THE GRAND LINE IS JUST THE BEGINNING</span>
+        <div class="hero-motion"><img class="hero" src="assets/onepiece-1.webp" alt="Monkey D. Luffy lifting his straw hat" width="1500" height="844" fetchpriority="high"></div>
+        <span class="art-chapter" aria-hidden="true">CHAPTER<br><b>01</b></span><div class="art-label"><span>INSPIRED BY ONE PIECE</span><strong>SET SAIL.</strong></div>
+        <div class="portrait-stamp" tabindex="0" aria-label="Wanted poster featuring Kerby James Pajaron, web developer"><strong>WANTED</strong><img src="assets/kerby-professional.webp" alt="Professional portrait of Kerby James Pajaron" width="1024" height="1024"><span>KERBY JAMES PAJARON</span><small>WEB DEVELOPER · IT STUDENT</small></div>
+        <div class="art-actions"><button id="open-crew">MEET THE CREW <span aria-hidden="true">↗</span></button><button id="open-quest">FIND THE TREASURE <span aria-hidden="true">◇</span></button></div>
+      </div>
+    </section>
+    <section class="scene" data-name="EDUCATION" aria-labelledby="education-title">
+      <div class="scene-stripes" aria-hidden="true"></div>
+      <div class="content"><p class="eyebrow">THE LOGBOOK / 01</p><h2 class="cut" id="education-title">A WORK IN<br><em>PROGRESS.</em></h2><p class="section-lead">Every adventure starts with a little curiosity.</p>
+        <div class="stack timeline"><article class="tile timeline-item"><span class="meta">COLLEGE / 2024–PRESENT / THIRD YEAR</span><h3>BS INFORMATION<br>TECHNOLOGY</h3><p>PHINMA Cagayan de Oro College</p><span class="timeline-note">Currently learning, building, and growing.</span></article><article class="tile timeline-item"><span class="meta">SENIOR HIGH SCHOOL / 2022–2024</span><h3>TVL PROGRAMMING</h3><p>PHINMA Cagayan de Oro College Senior High School</p></article></div>
+      </div><aside class="character-panel" aria-hidden="true"><img src="assets/onepiece-2.webp" alt="" width="1200" height="900" loading="lazy"><span class="character-quote">KEEP<br>GOING<span>THE JOURNEY CONTINUES.</span></span></aside>
+    </section>
+    <section class="scene projects-scene" data-name="PROJECTS" aria-labelledby="projects-title">
+      <div class="scene-stripes" aria-hidden="true"></div>
+      <div class="content full"><div class="section-heading"><div><p class="eyebrow">BUILT WITH CURIOSITY / 02</p><h2 class="cut" id="projects-title">SELECTED <em>WORK.</em></h2></div><p class="heading-note">SIX PROJECTS. A LOT OF LEARNING.<br>SELECT A CARD FOR THE FULL STORY.</p></div>
+        <div class="project-tools"><span><b id="project-index">01</b> / 06 <span class="muted-text">— DRAG OR SCROLL THE DECK</span></span><div><button id="projects-prev" aria-label="Previous project">←</button><button id="projects-next" aria-label="Next project">→</button></div></div>
+        <div class="projects my-work-grid" aria-label="Project carousel" tabindex="0">
+          <article class="tile project" data-project="0"><div class="project-visual"><img src="assets/project-nails.svg" alt="Concept wireframe of a salon appointment calendar" width="640" height="380" loading="lazy"><span>CONCEPT PREVIEW</span></div><div class="project-body"><span class="project-status">PERSONAL PROJECT · DEPLOYMENT UNVERIFIED</span><span class="project-number">01</span><h3>NAILS BY<br>MICHELLE</h3><p>Salon booking and management, from appointments to an administrator dashboard.</p><div class="tech-tags"><span>PHP</span><span>MYSQL</span><span>JAVASCRIPT</span></div><button class="project-open magnetic" data-project-open="0">PROJECT DETAILS <span aria-hidden="true">↗</span></button></div></article>
+          <article class="tile project" data-project="1"><div class="project-visual"><img src="assets/project-kerlov.svg" alt="Concept wireframe of a media catalog" width="640" height="380" loading="lazy"><span>CONCEPT PREVIEW</span></div><div class="project-body"><span class="project-status">IN DEVELOPMENT</span><span class="project-number">02</span><h3>KERLOV.TV</h3><p>A cinematic movie, anime, and series discovery website with watchlists and profiles.</p><div class="tech-tags"><span>NEXT.JS</span><span>TYPESCRIPT</span><span>SUPABASE</span></div><button class="project-open magnetic" data-project-open="1">PROJECT DETAILS <span aria-hidden="true">↗</span></button></div></article>
+          <article class="tile project" data-project="2"><div class="project-visual"><img src="assets/project-inkverse.svg" alt="Concept wireframe of a manga library" width="640" height="380" loading="lazy"><span>CONCEPT PREVIEW</span></div><div class="project-body"><span class="project-status">IN DEVELOPMENT</span><span class="project-number">03</span><h3>INKVERSE</h3><p>A manga, manhwa, and manhua reading project with catalogs and chapter reading.</p><div class="tech-tags"><span>PHP</span><span>MYSQL</span><span>APIS</span></div><button class="project-open magnetic" data-project-open="2">PROJECT DETAILS <span aria-hidden="true">↗</span></button></div></article>
+          <article class="tile project" data-project="3"><div class="project-visual"><img src="assets/project-yapo.svg" alt="Concept diagram of two laundry and refilling branches" width="640" height="380" loading="lazy"><span>CONCEPT PREVIEW</span></div><div class="project-body"><span class="project-status">CAPSTONE · PROPOSED SYSTEM</span><span class="project-number">04</span><h3>YAPO REFILLING<br>&amp; LAUNDRY</h3><p>A proposed web-based operations system for two refilling and laundry branches.</p><div class="tech-tags"><span>WEB APP</span><span>POS</span><span>INVENTORY</span></div><button class="project-open magnetic" data-project-open="3">PROJECT DETAILS <span aria-hidden="true">↗</span></button></div></article>
+          <article class="tile project" data-project="4"><div class="project-visual"><img src="assets/portfolio-preview.png" alt="Actual screenshot of this local One Piece portfolio" width="640" height="380" loading="lazy"><span>ACTUAL LOCAL SCREENSHOT</span></div><div class="project-body"><span class="project-status">RUNNING LOCALLY · PERSONAL PROJECT</span><span class="project-number">05</span><h3>ONE PIECE<br>PORTFOLIO</h3><p>The interactive personal portfolio you are exploring. Code, characters, and a little adventure.</p><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span></div><button class="project-open magnetic" data-project-open="4">PROJECT DETAILS <span aria-hidden="true">↗</span></button></div></article>
+          <article class="tile project" data-project="5"><div class="project-visual"><img src="assets/project-cisco.svg" alt="Concept network topology showing interconnected lab devices" width="640" height="380" loading="lazy"><span>CONCEPT PREVIEW</span></div><div class="project-body"><span class="project-status">ACADEMIC LAB WORK</span><span class="project-number">06</span><h3>CISCO NETWORK<br>SECURITY</h3><p>Hands-on Packet Tracer labs in networking, authentication, and secure device access.</p><div class="tech-tags"><span>CISCO</span><span>NETWORKING</span><span>SECURITY</span></div><button class="project-open magnetic" data-project-open="5">PROJECT DETAILS <span aria-hidden="true">↗</span></button></div></article>
+        </div><p class="footnote">Concept previews illustrate each project's purpose. Public demos and original screenshots have not been supplied.</p>
+      </div>
+    </section>
+    <section class="scene" data-name="SKILLS" aria-labelledby="skills-title">
+      <div class="scene-stripes" aria-hidden="true"></div><div class="content"><p class="eyebrow">TOOLS OF THE TRADE / 03</p><h2 class="cut" id="skills-title">MY <em>TOOLKIT.</em></h2><p class="section-lead">Learning by making things that work.</p>
+        <div class="skill-tabs" role="tablist" aria-label="Skill categories"><button role="tab" id="tab-web" aria-controls="skills-web" aria-selected="true" data-skill="web">WEB DEVELOPMENT</button><button role="tab" id="tab-systems" aria-controls="skills-systems" aria-selected="false" tabindex="-1" data-skill="systems">SYSTEMS &amp; DATA</button></div>
+        <div id="skills-web" class="skillset" role="tabpanel" aria-labelledby="tab-web"><div class="skill-row"><strong><i aria-hidden="true">&lt;/&gt;</i> HTML / CSS</strong><span class="skill-track" style="--level:88%"><i></i></span></div><div class="skill-row"><strong><i aria-hidden="true">JS</i> JAVASCRIPT</strong><span class="skill-track" style="--level:72%"><i></i></span></div><div class="skill-row"><strong><i aria-hidden="true">{ }</i> PHP / MYSQL</strong><span class="skill-track" style="--level:76%"><i></i></span></div><div class="skill-row"><strong><i aria-hidden="true">B</i> BOOTSTRAP</strong><span class="skill-track" style="--level:70%"><i></i></span></div></div>
+        <div id="skills-systems" class="skillset" role="tabpanel" aria-labelledby="tab-systems" hidden><div class="skill-row"><strong><i aria-hidden="true">⌘</i> CISCO NETWORKING</strong><span class="skill-track" style="--level:66%"><i></i></span></div><div class="skill-speech"><strong>SECURITY, SYSTEMS &amp; PRECISION.</strong><p>Exploring networking and cybersecurity through academic labs, with hands-on experience in data annotation.</p></div></div><p class="footnote">Bars are illustrative self-assessments, not certified proficiency scores.</p>
+      </div><aside class="character-panel" aria-hidden="true"><img src="assets/onepiece-3.webp" alt="" width="1200" height="900" loading="lazy"><span class="character-quote">STAY<br>SHARP<span>BUILD. LEARN. IMPROVE.</span></span></aside>
+    </section>
+    <section class="scene" data-name="ABOUT" aria-labelledby="about-title">
+      <div class="scene-stripes" aria-hidden="true"></div><div class="content"><p class="eyebrow">THE PERSON BEHIND THE CODE / 04</p><h2 class="cut" id="about-title">HEY, I'M <em>KERBY.</em></h2>
+        <div class="aboutcard"><img class="portrait-tilt" src="assets/kerby-professional.webp" alt="Kerby James Pajaron" width="1024" height="1024" loading="lazy"><div><span class="meta">DEVELOPER IN THE MAKING</span><p>I'm a third-year Information Technology student at PHINMA Cagayan de Oro College. I enjoy creating practical websites, learning new technologies, and improving my skills through hands-on projects.</p><p>My goal is to grow into a capable developer and create useful digital experiences.</p></div></div><div class="speech-bubble">A little curiosity. A lot of persistence.<span aria-hidden="true">✦</span></div>
+        <article class="experience timeline-item"><span class="meta">WORK EXPERIENCE</span><h3>REMOTASKS <span>— Data Annotation Tasks</span></h3><p>LiDAR annotation, robotics-related annotation, image segmentation, and 2D annotation.</p></article>
+      </div><aside class="character-panel" aria-hidden="true"><img src="assets/onepiece-4.webp" alt="" width="1200" height="900" loading="lazy"><span class="character-quote">MAKE<br>IT COUNT<span>ONE PROJECT AT A TIME.</span></span></aside>
+    </section>
+    <section class="scene contact-scene" data-name="CONTACT" aria-labelledby="contact-title">
+      <div class="scene-stripes" aria-hidden="true"></div><div class="contact-lines" aria-hidden="true"></div><div class="content"><p class="eyebrow">THE NEXT ADVENTURE / 05</p><h2 class="cut" id="contact-title">LET'S MAKE<br><em>SOMETHING.</em></h2><p class="section-lead">Have an idea? Let's start a conversation.</p>
+        <div class="contactlinks"><a data-platform="facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/kerbyjamespajaron4"><span class="social-icon" aria-hidden="true">f</span><span><small>FACEBOOK</small><b>Kerby James Pajaron</b></span><i aria-hidden="true">↗</i></a><a data-platform="instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/its.keyjay/"><span class="social-icon" aria-hidden="true">◎</span><span><small>INSTAGRAM</small><b>@its.keyjay</b></span><i aria-hidden="true">↗</i></a><a data-platform="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kerby-james-pajaron-491b13413"><span class="social-icon" aria-hidden="true">in</span><span><small>LINKEDIN</small><b>Kerby James Pajaron</b></span><i aria-hidden="true">↗</i></a></div><p class="contact-signoff">GOOD CODE. GREAT ADVENTURES.<span>See you on the Grand Line. — K.J.P</span></p>
+      </div><aside class="character-panel" aria-hidden="true"><img src="assets/onepiece-5.webp" alt="" width="1200" height="900" loading="lazy"><span class="character-quote">UNTIL<br>NEXT TIME<span>THANKS FOR COMING ABOARD.</span></span></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="chapter-status"><span id="count" class="page-count">01 / 06</span><span id="section-label">HOME</span></div><div class="exploration"><span id="exploration-label">1 / 6 ISLANDS EXPLORED</span><span class="exploration-track" role="progressbar" aria-label="Portfolio exploration" aria-valuemin="0" aria-valuemax="100" aria-valuenow="17"><i id="exploration-fill"></i></span></div><div class="footer-actions"><canvas id="audio-visualizer" width="80" height="24" role="img" aria-label="Music playback visualizer"></canvas><button id="sound-toggle" aria-label="Toggle sound, shortcut M" aria-pressed="false"><span id="sound-state">SOUND / M</span></button><button data-open-help aria-keyshortcuts="h ?"><kbd>H</kbd> GUIDE</button></div></footer>
+  <audio id="soundtrack" src="assets/we-are-intro.mp3" data-license="User supplied; replace with licensed music before public distribution" loop preload="metadata"></audio>
+  <div id="sparks" aria-hidden="true"></div><div id="spotlight" aria-hidden="true"></div><div id="toast" role="status" aria-live="polite"></div><span id="navigation-announcement" class="sr-only" role="status" aria-live="polite"></span>
+  <dialog id="portfolio-dialog" aria-labelledby="dialog-title"><div class="dialog-shell"><button class="dialog-close" aria-label="Close dialog">✕</button><p class="dialog-kicker">THE GRAND LINE / K.J.P</p><h2 id="dialog-title"></h2><div id="dialog-content"></div></div></dialog>
+  <noscript><p class="noscript-note">JavaScript is disabled. All portfolio sections are available below; interactive features and sound require JavaScript.</p></noscript>
+</body>
+</html>

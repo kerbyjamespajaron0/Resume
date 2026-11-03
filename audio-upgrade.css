@@ -1,0 +1,28 @@
+/* The soundtrack controls share the footer; no floating audio overlays. */
+#sound-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 36px;
+  color: var(--cream, #fff8e8);
+  cursor: pointer;
+}
+#sound-toggle[aria-pressed="false"] { color: #aaa4a4; }
+#sound-state {
+  font: 700 10px/1.2 Consolas, monospace;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+#audio-visualizer {
+  display: block;
+  width: 70px;
+  height: 22px;
+  flex: 0 0 auto;
+  opacity: .8;
+}
+#sound-toggle:focus-visible { outline: 3px solid #ffe087; outline-offset: 4px; }
+@media (max-width: 600px) {
+  #audio-visualizer { width: 40px; }
+  #sound-toggle { gap: 5px; }
+  #sound-state { font-size: 9px; letter-spacing: .5px; }
+}

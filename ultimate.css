@@ -1,0 +1,66 @@
+/* Optional adventures. No floating dock or duplicate navigation controls. */
+.crew-stage{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);background:#080808;border:1px solid #fff3;overflow:hidden;min-height:330px;isolation:isolate}
+.crew-art{position:relative;overflow:hidden;min-height:330px;background:#161313}
+.crew-art:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 58px,#e4002120 60px 62px);pointer-events:none}
+.crew-art img{display:block;width:100%;height:100%;max-height:440px;object-fit:cover;object-position:center;animation:crewRubber .65s cubic-bezier(.2,.8,.2,1) both}
+.crew-impact{position:absolute;right:10px;bottom:15px;font:900 75px/1 Impact,sans-serif;color:#fff;transform:rotate(-15deg);text-shadow:4px 4px #111;opacity:.75;pointer-events:none}
+.crew-caption{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(20px,4vw,35px);position:relative;min-width:0}
+.crew-caption>span{font:700 10px/1.6 monospace;letter-spacing:1.8px;color:#f3a1ac}
+.crew-caption h3{font:900 clamp(25px,4vw,43px)/1.05 Impact,'Arial Narrow',sans-serif;margin:14px 0 22px;letter-spacing:1px;color:#fff;overflow-wrap:anywhere}
+.crew-caption small{font:10px/1.6 monospace;color:#a69a92;margin-top:18px}
+.manga-bubble{position:relative;background:#fff8e8;color:#111;padding:17px 19px;font:700 13px/1.6 Arial,sans-serif;border:3px solid #111;box-shadow:5px 5px #90001a;margin:0;animation:bubblePop .45s .17s backwards}
+.manga-bubble:before{content:'';position:absolute;left:-14px;top:22px;width:21px;height:21px;transform:skewY(-30deg) rotate(10deg);background:#fff8e8;border-left:3px solid #111;border-bottom:3px solid #111;z-index:-1}
+.crew-sword .crew-art img{animation:crewSword .6s both}
+.crew-sword .crew-art:after{background:linear-gradient(137deg,transparent 36%,#a2ffa470 38%,transparent 40%,transparent 61%,#ffffffa0 62%,transparent 64%);animation:swordFlash .65s both}
+.crew-ember .crew-art img{animation:crewEmber .7s both}
+.crew-ember .crew-art:after{background:linear-gradient(0deg,#ff5a1650,transparent 70%);animation:emberFlash .75s both}
+.crew-bloom .crew-art img{animation:crewBloom .7s cubic-bezier(.2,1.3,.4,1) both;object-fit:contain;background:#151011}
+.crew-bloom .crew-impact{color:#ffafc8}
+.crew-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}
+.crew-controls>span{font:700 11px monospace;letter-spacing:2px;color:#cbbfb1}
+.crew-thumbnails{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:17px 0 22px}
+.crew-thumbnails button{position:relative;min-width:0;padding:0;border:2px solid #fff3;background:#111;color:#fff;transition:transform .2s,border-color .2s}
+.crew-thumbnails button:hover,.crew-thumbnails button:focus-visible{transform:translateY(-3px);border-color:#fff}
+.crew-thumbnails button[aria-pressed=true]{border-color:#f8ca77;box-shadow:0 0 0 1px #f8ca77}
+.crew-thumbnails img{width:100%;height:76px;object-fit:cover;display:block;opacity:.7;transition:opacity .2s}
+.crew-thumbnails button[aria-pressed=true] img,.crew-thumbnails button:hover img{opacity:1}
+.crew-thumbnails span{display:block;padding:7px 3px;font:700 9px monospace;letter-spacing:1px}
+.quest-rules{font:13px/1.7 Arial,sans-serif;color:#d0c8c0;margin:0 0 20px}
+.quest-scoreboard{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;background:#080808;padding:15px;margin:16px 0 20px;border:1px solid #ffffff25}
+.quest-scoreboard>div{border-right:1px solid #ffffff25;padding:0 10px}
+.quest-scoreboard>div:last-child{border-right:0}
+.quest-scoreboard span{display:block;font:700 9px/1.4 monospace;letter-spacing:1px;color:#b9b0a6;margin-bottom:8px}
+.quest-scoreboard strong{font:900 32px/1 Impact,sans-serif;color:#fff0c2;font-variant-numeric:tabular-nums}
+.quest-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.treasure-chest{display:flex;min-width:0;min-height:104px;flex-direction:column;align-items:center;justify-content:center;padding:13px 7px;border:1px solid #f5d69a80;background:linear-gradient(135deg,#31191c,#171212);color:#e8c17d;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.treasure-chest:hover:enabled,.treasure-chest:focus-visible{transform:translateY(-4px) rotate(-2deg);background:#51202a;box-shadow:4px 5px #080808}
+.treasure-chest svg{width:54px;height:43px;pointer-events:none}
+.treasure-chest>span:last-child{font:700 9px/1.4 monospace;letter-spacing:1.5px;margin-top:8px}
+.treasure-chest:disabled{cursor:default}
+.treasure-chest.treasure-empty{opacity:.45;background:#111;border-color:#ffffff30}
+.treasure-chest.treasure-found{border:2px solid #ffe0a0;background:#4f2630;color:#fff0be;animation:treasurePop .55s ease both}
+.chest-reveal{display:block;font:45px/1 Georgia,serif}
+.quest-status{min-height:44px;margin:18px 0;font:700 12px/1.7 Arial,sans-serif;color:#f1ddba}
+.quest-actions{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.quest-restart{background:#f9f1e2;border:1px solid #fff;color:#111;padding:11px 18px;font:700 12px monospace;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.quest-restart:hover,.quest-restart:focus-visible{transform:translateY(-2px);box-shadow:3px 4px #b3001b}
+#toast{position:fixed;top:auto;bottom:82px;left:50%;z-index:500;width:max-content;max-width:min(90vw,510px);padding:13px 19px;transform:translate(-50%,12px);opacity:0;background:#111;color:#f8ecd7;border:1px solid #d4b36c;border-left:4px solid #e40021;box-shadow:5px 6px #000;font:700 11px/1.6 monospace;pointer-events:none;transition:opacity .25s,transform .25s;text-align:center}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+.pirate-signal:after{content:'SET SAIL';position:fixed;inset:0;display:grid;place-items:center;background:#e400211a;z-index:400;pointer-events:none;color:#fff8e8;font:900 clamp(45px,12vw,150px)/1 Impact,sans-serif;text-shadow:7px 7px #111;letter-spacing:8px;animation:pirateSignal 1s both}
+@keyframes crewRubber{0%{transform:translateX(-35px) scale(.94,1.05);opacity:0}60%{transform:translateX(4px) scale(1.02,.98)}100%{transform:none;opacity:1}}
+@keyframes crewSword{0%{transform:translate(-50px,30px);clip-path:polygon(0 0,0 0,0 100%,0 100%);opacity:.2}100%{transform:none;clip-path:polygon(0 0,100% 0,100% 100%,0 100%);opacity:1}}
+@keyframes swordFlash{0%{transform:translateX(-100%);opacity:0}40%{opacity:1}100%{transform:translateX(50%);opacity:0}}
+@keyframes crewEmber{from{transform:translateY(25px) scale(1.04);filter:sepia(.7) brightness(1.4);opacity:0}to{transform:none;filter:none;opacity:1}}
+@keyframes emberFlash{from{transform:translateY(50%);opacity:1}to{transform:translateY(-30%);opacity:0}}
+@keyframes crewBloom{0%{transform:translateY(35px) scale(.86);opacity:0}65%{transform:translateY(-5px) scale(1.03);opacity:1}100%{transform:none}}
+@keyframes bubblePop{from{transform:scale(.85) rotate(-3deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes treasurePop{0%{transform:scale(.92)}60%{transform:scale(1.05) rotate(2deg)}100%{transform:none}}
+@keyframes pirateSignal{0%{opacity:0;transform:scale(1.15) rotate(-5deg)}20%,70%{opacity:1;transform:scale(1) rotate(-3deg)}100%{opacity:0;transform:scale(1.03)}}
+@media(max-width:600px){.crew-stage{grid-template-columns:1fr;min-height:0}.crew-art{min-height:0;height:240px}.crew-art img{height:240px;max-height:none}.crew-caption{padding:19px 19px 23px}.crew-caption h3{font-size:29px;margin:10px 0 17px}.crew-caption small{margin-top:12px;font-size:9px}.manga-bubble{font-size:12px;padding:13px 15px}.crew-thumbnails{gap:5px}.crew-thumbnails img{height:55px}.crew-thumbnails span{font-size:8px;letter-spacing:0;padding:7px 1px}.crew-controls .small-action{font-size:10px;padding:9px}.quest-grid{gap:8px}.treasure-chest{min-height:92px;padding:10px 5px}.treasure-chest svg{width:45px;height:38px}.treasure-chest>span:last-child{font-size:8px;letter-spacing:.8px}.quest-scoreboard{gap:5px;padding:12px 4px}.quest-scoreboard>div{padding:0 8px}.quest-scoreboard span{font-size:8px;letter-spacing:.5px}.quest-scoreboard strong{font-size:28px}#toast{bottom:85px;font-size:10px;padding:11px 14px;width:max-content}}
+.reduced-motion .crew-art img,.reduced-motion .crew-art:after,.reduced-motion .manga-bubble,.reduced-motion .treasure-found,.reduced-motion .pirate-signal:after{animation:none!important;transform:none!important;filter:none!important}
+.reduced-motion .pirate-signal:after{display:none}
+.reduced-motion .crew-thumbnails button,.reduced-motion .treasure-chest,.reduced-motion .quest-restart{transition:none!important;transform:none!important}
+.reduced-motion #toast{transition:none!important;transform:translate(-50%,0)!important}
+.performance-mode .crew-art:after{display:none}
+.performance-mode .treasure-chest:hover,.performance-mode .quest-restart:hover,.performance-mode #toast{box-shadow:none}
+@media(prefers-reduced-motion:reduce){.crew-art img,.crew-art:after,.manga-bubble,.treasure-found,.pirate-signal:after{animation:none!important;transform:none!important;filter:none!important}.pirate-signal:after{display:none}.crew-thumbnails button,.treasure-chest,.quest-restart{transition:none!important;transform:none!important}#toast{transition:none!important;transform:translate(-50%,0)!important}}
